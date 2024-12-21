@@ -25,7 +25,7 @@ body {
 .section-title {
   font-family: "Didot";
   font-size: xx-large;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .section {
@@ -70,7 +70,8 @@ body {
   color: white;  /* Set text color to white */
   font-size: large;
   text-align: justify;
-  font-weight: bolder;
+  font-style:normal;
+  font-kerning: auto;
 }
 
 .image {
@@ -88,23 +89,25 @@ body {
   font-family: "Didot";
   display: flex;
   text-align: left;
-  justify-content: flex-end;
-  margin: 3%;
   font-size: large;
-  color:#fff
+  color:#fff;
+  font-weight: lighter;
 }
 
 .project {
   font-family: "Didot";
   display: flex;
-  border-bottom: 1px solid snow;
   padding-bottom: 1%;
   margin: 1%;
   justify-items: center;
   align-items: center; 
   color:#fff;
-  flex-direction: row;
-  justify-content: stretch;
+  justify-content: space-around;
+}
+
+.project-row{
+  display: inline-block;
+  width: 100%;
 }
 
 .project-title {
@@ -113,14 +116,15 @@ body {
   text-align: left;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: stretch
+  justify-content: space-around;
 }
 
 .project-description {
   text-align: justify;
   flex:1;
   display: flex;
-  justify-content: stretch
+  justify-content: stretch;
+  font-weight: 700;
 }
 
 .btnClass{
@@ -132,16 +136,8 @@ body {
 
 }
 
-/* .btnClass:hover{
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor:pointer;
-} */
-
 .view-project {
   height: 3rem;
-  
 }
 
 .btn{
@@ -173,3 +169,24 @@ body {
 .btn.btn:click{
   background-color: #ffffff;
 }
+
+.projectpage{
+  margin: 3%;
+  font-family: 'Didot';
+  color:#fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectpage-title{
+  text-align: center;
+}
+
+.projectpage-subheading{
+  justify-content: flex-start;
+  font-size: x-large;
+  text-align: justify;
+  font-weight: bold;
+}
+
+

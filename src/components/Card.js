@@ -22,12 +22,10 @@ export default function Card({
       )}
 
       {!isTitleCard && (
-        <div>
-          <div className="">
-            {project.map((x, key) => (
-              <Project project={x} projectkey={key} />
-            ))}
-          </div>
+        <div className='project-row'>
+          {project.map((x, key) => (
+            <Project project={x} projectkey={key} />
+          ))}
         </div>
       )}
     </div>
