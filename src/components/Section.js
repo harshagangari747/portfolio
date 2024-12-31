@@ -1,6 +1,7 @@
 import Card from "./Card";
 
 export default function Section({content}) {
+  console.log('content',content)
   return (
     <div className="section border-style">
       <div className="section-style">

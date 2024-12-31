@@ -25,28 +25,7 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.container{
-  display:grid;
-  grid-column: 2;
-  border: 1px solid orange;
-  width: 80vw;
-  justify-self: center;
-  border: 1px solid black;
-  border-radius: 5px;
-}
 
 .column{
   grid-column: 2;

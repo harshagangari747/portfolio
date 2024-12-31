@@ -10,6 +10,7 @@ export default function Card({
     ? (cardDisplayType += "titleCard")
     : cardDisplayType;
 
+    console.log('Card',project)
   return (
     <div className={cardDisplayType}>
       {isTitleCard && (

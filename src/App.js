@@ -3,29 +3,17 @@ import { Route, Routes } from 'react-router-dom';
 import Home from "./components/Home";
 import ViewProject from "./components/ViewProject";
 import ErrorPage from "./ErrorPage";
+import projects from './projectDetails.json'
 
 function App() {
-  const projectsList={
-    0:{
-      title:"Basic Computer Architecture Simulation",
-      description:"Simulated RISC architecture pipeline",
-      software:['Java','Swing','Eclipse'],
-      images:['newyorksunset.jpg','newyorksunset.jpg']
-    },
-    1:{
-      title:"GreenShoeWebStore",
-      description:"Simulated RISC architecture pipeline",
-      software:['Java','Swing','Eclipse'],
-      images:['image1.png']
-    }
-  }
+  const projectsList= projects;
+  console.log('list',projectsList)
   return (
     <div>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/:id' element={<ViewProject projectList={projectsList}/>}/>
         <Route path="*" errorElement={<ErrorPage/>}/>
-        
       </Routes>
     </div>
     

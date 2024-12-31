@@ -1,0 +1,35 @@
+[ 
+        {
+        "title":"Solving 'Spot the differences in two images'",
+        "shortDescription":"A python project to solve spot the difference in two images game using computer vision",
+        "longDescription":"We were a team of two in 'Computer Vision' course. As part of final project, I thought to implement a basic but unique project that 'actually' solves an existing problem. Thinking out of the box, I suggested my team member on solving 'Spot the Differences in two images' means give the clues to the user indicating the possible location of the difference, but with a twist; using AI images as source. Professor nodded his head indicating the project approval. We,with excitement, started collecting the packages and implementing the code using open-cv,YOLO. We made this project as comparision between the YOLOv8 and YOLOv11. Though we didn't get a perfectly similar images with little differences, we manage to generate a decent images using DALL-E and copilot. End result as of 2024 was, YOLOv8 detection yeilded a better results than YOLOv11",
+        "githubUrl":"https://github.com/harshagangari747/CV-Final-Project-Codebase",
+        "software":["Python,","open-cv,","YOLOv8,","YOLOv11,","Google Colab,", "DALL-E"],
+        "images":["newyorksunset.jpg"]
+    },
+    {
+        "title":"Green Shoe Store",
+        "shortDescription":"Full stack java spring boot e-commerce application for women shoe",
+        "longDescription":"As part of 'Component Based Enterprise Software' course, I along with 4 other peers decided to choose a e-commerce web store among the options provided by the professor. The webstore sells only ecofriendly women shoe backedup by an NGO. I significantly involved in designing `relational database` (MySQL) for the backend, developing api endpoint to fetch order details when given an order number. I also implemented AWS S3 integration and mail service upon order confirmation and new account creation feature. I also developed a feature to move selected shoes to 'on-sale price' and back from sale to regular price.",
+        "githubUrl":"https://github.com/harshagangari747/GreenShoesStore2024/",
+        "software":["Java,","Eclipse,","MySQL,","NextJS,","Postman,","JWT,", "AWS SDK,", "AWS S3,","Swagger"],
+        "images":["newyorksunset.jpg"]
+
+    },
+    {
+        "title":"Email Automation",
+        "shortDescription":"A .NET windows service that sends mail when there is a change in web content using RSS feed",
+        "longDescription":"During my initial days in university, I was in search of authorized work to make the ends meet. It was highly competitive application pool to crack a part time job in university as a student. To get an edge in filling up the application quickly just after job became available, I designed a windows background service using .NET Framework that scans the RSS feed for every 30 mins. If there is any change in job postings, a new mail will be triggered to my account so that I can act fast in filling the applications",
+        "githubUrl":"https://github.com/harshagangari747/GWU-AutomationBot",
+        "software":["C#,","Visual Studio,","Windows Services"],
+        "images":["newyorksunset.jpg"]
+    },
+    {
+        "title":"Basic Computer Architecture Simulation",
+        "shortDescription":"A Java application that simulates RISC architecture",
+        "longDescription":"Part of 'Computer System Architecture' course in my first semester, we were asked to develop a computer architecture simulator window application on a highlevel using only Java. I implemented this project using java swing library and developed without requiring any AI tools. Followed agile practices during the development of the code.",
+        "githubUrl":"",
+        "software":["Java","Swing","Eclipse"],
+        "images":[]
+    }
+]

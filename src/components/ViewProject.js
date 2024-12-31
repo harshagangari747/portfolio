@@ -2,20 +2,20 @@ import { useParams } from "react-router-dom";
 
 export default function ViewProject({ projectList }) {
   var projectId = useParams();
-  console.log("pid", projectId);
   const project = projectList[projectId.id];
-  const { title, description, software, images } = project;
+  const { title, longDescription, software, images } = project;
+
 
   console.log("selected proj ", project);
 
   return (
-    <div className="projectpage">
+    <div className="projectpage border-style">
       <div className="projectpage-title section-title">{title}</div>
       <div>
         <span className="projectpage-subheading">
-          <b>Description </b>
+          <b>Story </b>
         </span>
-        <div className="description">{description}</div>
+        <div className="projectpage-description">{longDescription}</div>
       </div>
       <div className="project-Software">
         <span className="projectpage-subheading">Software</span>
@@ -25,12 +25,12 @@ export default function ViewProject({ projectList }) {
           })}
         </div>
       </div>
-      <div className="image">
+      <div className="viewproject-imagebox">
         {images.map((image) => {
           return (
-     
-              <img src={require("../images/" + image)} alt="to be declared" />
- 
+            <div className="viewproject-image">
+              <img src={require("../images/" + image)} className="viewproject-imagedims" alt="to be declared" />
+              </div>
           );
         })}
       </div>

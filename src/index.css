@@ -3,9 +3,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(19, 7, 12, 1);
+  /* background-color: rgba(19, 7, 12, 1); */
+  background-color: #FEFFFE;
   box-shadow: inset 0 0 0px rgba(19, 7, 12, 1);
 }
 
@@ -14,18 +13,24 @@ body {
   align-content: center;
   font-family: "Didot";
   font-size: xx-large;
-  color: #fff;
+  color: #000;
   backdrop-filter: blur(100px);
   margin: 15px;
   padding: 5px;
   box-shadow: #fff;
-  font-weight: bold;
+  font-weight:bolder;
+  box-shadow: #000;
 }
 
+a{
+  text-decoration: none;
+  color: #0D1B1E;
+}
 .section-title {
   font-family: "Didot";
   font-size: xx-large;
   font-weight: 600;
+  color:#0D1B1E;
 }
 
 .section {
@@ -40,10 +45,10 @@ body {
 }
 
 .border-style {
-  border-bottom: 3px solid snow;
-  border-left: 10px solid snow;
-  border-top: 1px solid snow;
-  border-right: 1px solid snow;
+  /* border-bottom: 3px solid black; */
+  border-left: 10px solid black;
+  /* border-top: 1px solid black; */
+  /* border-right: 1px solid black; */
 }
 
 .card {
@@ -53,7 +58,9 @@ body {
   padding: 3%;
   width: 90%;  /* Instead of using '90em', using percentage for better responsiveness */
   flex-direction: row;
-  background-color: rgba(19, 7, 12, 1);
+  background-color: rgba(19, 7, 12, 1); 
+  border-radius: 10px;
+  background-color: #0D1B1E;
   justify-content: space-between;
   font-family: 'Didot';
 }
@@ -72,16 +79,19 @@ body {
   text-align: justify;
   font-style:normal;
   font-kerning: auto;
+  padding:2%;
 }
 
 .image {
   height: 50vh;  /* Corrected to vh (viewport height) */
   width: 40vw;  /* Corrected to vw (viewport width) */
-  border-radius: 10px;
+  border-radius: 15px;
   margin: 4%;
   border: 2px dashed #fff;  /* Dashed white border */
   padding: 2%;
   object-fit: cover;  /* Ensures the image covers the space without distortion */
+  box-shadow: #fff;
+  display: flex;
 }
 
 
@@ -92,6 +102,7 @@ body {
   font-size: large;
   color:#fff;
   font-weight: lighter;
+
 }
 
 .project {
@@ -111,7 +122,7 @@ body {
 }
 
 .project-title {
-  font-size: x-large;
+  font-size: large;
   flex: 1; 
   text-align: left;
   flex-direction: row;
@@ -121,6 +132,7 @@ body {
 
 .project-description {
   text-align: justify;
+  margin-right: 2%;
   flex:1;
   display: flex;
   justify-content: stretch;
@@ -153,6 +165,8 @@ body {
   background-repeat: no-repeat;
   align-content: center;
   flex-direction: column;
+  width:7vw;
+  flex:1
 }
 
 .btn:hover {
@@ -171,9 +185,10 @@ body {
 }
 
 .projectpage{
-  margin: 3%;
+  margin:1%;
+  padding: 3%;
   font-family: 'Didot';
-  color:#fff;
+  color:#0D1B1E;
   display: flex;
   flex-direction: column;
 }
@@ -184,9 +199,39 @@ body {
 
 .projectpage-subheading{
   justify-content: flex-start;
-  font-size: x-large;
+  font-size: large;
   text-align: justify;
   font-weight: bold;
 }
 
+.projectpage-description{
+  color:#0D1B1E;
+  font-size: large;
+}
+
+.viewproject-image {
+  margin: 1%;
+  padding: 3%;
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+  border-radius: 2%;
+  box-shadow: #ffff;
+}
+
+.viewproject-imagedims {
+  width: 85%;                 
+  height: 60%;                
+  border-radius: 10px;        
+  object-fit: contain;        
+}
+
+.viewproject-imagebox {
+  display: flex;              
+  flex-direction: column;     
+  align-items: center;        
+  justify-content: center;    
+  box-sizing: border-box;
+
+}
 

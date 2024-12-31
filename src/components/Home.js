@@ -1,7 +1,8 @@
 import Section from './Section.js';
 import newyorksunset from "../images/newyorksunset.jpg";
-
+import projects from '../projectDetails.json'
 export default function Home(){
+    const projectList = projects
     const sectionContent = [
         {
           title: "About Me",
@@ -13,21 +14,9 @@ export default function Home(){
           title: "Projects",
           imageSource: null,
           isTitle: false,
-          projects: [
-            {
-              projectTitle: "Basic Computer Arch Simulation",
-              projectDescription:
-                "Developed a Java windows application to simulate a RISC pipeline architecture",
-            },
-            {
-              projectTitle: "Green Shoe Store",
-              projectDescription:
-                "Along with 4 others, developed a e-commerce web shoe store using Java, MySQL, ReactJs, AWS SDK"
-            }
-          ],
+          projects: projectList
         },
       ];
-
 
     return <div className="App">
     {sectionContent.map((x, key) => (
